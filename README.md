@@ -6,7 +6,7 @@
 
 Know what you have, what is expiring, and what needs to be restocked.
 
-![Status](https://img.shields.io/badge/Status-Planning-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Implemented-brightgreen?style=for-the-badge)
 ![Planned Python](https://img.shields.io/badge/Planned-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Planned Flask](https://img.shields.io/badge/Planned-Flask-black?style=for-the-badge&logo=flask&logoColor=white)
 
@@ -16,11 +16,11 @@ Know what you have, what is expiring, and what needs to be restocked.
 
 ## 📌 Overview
 
-**PantryLedger** is a household inventory management project planned to track pantry items, quantities, expiry dates, and supplies that need restocking. Its intended workflow is simple: record what is on the shelf, monitor expiry dates, and prepare a shopping list before essentials run out.
+**PantryLedger** is a Flask + SQLite household inventory app for tracking pantry items, quantities, expiry dates, low-stock levels, and shopping needs. Its intended workflow is simple: record what is on the shelf, monitor expiry dates, and prepare a shopping list before essentials run out.
 
-> **Development note:** This repository currently contains the project documentation only. The application and features below are planned, not implemented.
+> **Current status:** Implemented with inventory CRUD, stock consumption, low-stock restock suggestions, and a manual shopping list.
 
-## ✨ Planned Features
+## ✨ Features
 
 - ➕ Add, update, and remove pantry items
 - 📦 Track quantity and measurement units
@@ -30,7 +30,7 @@ Know what you have, what is expiring, and what needs to be restocked.
 - 🧾 Log consumption and update inventory
 - 🛒 Generate a shopping list from low-stock items
 
-## 🛠️ Planned Tech Stack
+## 🛠️ Tech Stack
 
 | Technology | Intended use |
 |---|---|
@@ -40,7 +40,7 @@ Know what you have, what is expiring, and what needs to be restocked.
 | HTML, CSS, JavaScript | User interface |
 | pytest | Automated testing |
 
-## 🧱 Proposed Data Model
+## 🧱 Data Model
 
 Each pantry item is expected to include:
 - Item name and category
@@ -59,7 +59,21 @@ Consumption records should capture the item, quantity used, and timestamp so inv
 - [x] Generate low-stock suggestions and manage shopping list
 - [ ] Add tests, sample data, and screenshots
 
-## 📁 Intended Project Structure
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/kalashsri18-crypto/PantryLedger.git
+cd PantryLedger
+python -m venv .venv
+# Windows: .venv\\Scripts\\activate
+# macOS/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+python app.py
+```
+
+Open http://127.0.0.1:5000. Run tests with `pytest -q`.
+
+## 📁 Project Structure
 
 ```text
 .
