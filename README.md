@@ -1,27 +1,66 @@
-# PantryLedger
+<div align="center">
+
+# 🥫 PantryLedger
+
 ### Pantry Inventory, Expiry & Shopping List Manager
 
-PantryLedger is a household inventory management project for tracking pantry items, quantities, expiry dates, and items that need restocking. Its intended workflow is simple: record what is on the shelf, keep an eye on expiry, and prepare a shopping list before supplies run out.
+Know what you have, what is expiring, and what needs to be restocked.
 
-> **Repository description:** A pantry inventory app concept with stock tracking, expiry reminders, low-stock alerts, and shopping-list management.
+![Status](https://img.shields.io/badge/Status-Planning-orange?style=for-the-badge)
+![Planned Python](https://img.shields.io/badge/Planned-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Planned Flask](https://img.shields.io/badge/Planned-Flask-black?style=for-the-badge&logo=flask&logoColor=white)
 
-## Planned product features
-- Add, update, and remove pantry items
-- Track quantity and measurement unit
-- Record purchase and expiry dates
-- Highlight items nearing expiry
-- Configure low-stock thresholds
-- Log consumption and adjust inventory
-- Generate a shopping list from low-stock items
+</div>
 
-## Planned technology
-- Python 3.10+
-- Flask
-- SQLite
-- HTML, CSS and vanilla JavaScript
-- pytest
+---
 
-## Intended project structure
+## 📌 Overview
+
+**PantryLedger** is a household inventory management project planned to track pantry items, quantities, expiry dates, and supplies that need restocking. Its intended workflow is simple: record what is on the shelf, monitor expiry dates, and prepare a shopping list before essentials run out.
+
+> **Development note:** This repository currently contains the project documentation only. The application and features below are planned, not implemented.
+
+## ✨ Planned Features
+
+- ➕ Add, update, and remove pantry items
+- 📦 Track quantity and measurement units
+- 📅 Record purchase and expiry dates
+- ⏰ Highlight items nearing expiry
+- 🚨 Configure low-stock thresholds
+- 🧾 Log consumption and update inventory
+- 🛒 Generate a shopping list from low-stock items
+
+## 🛠️ Planned Tech Stack
+
+| Technology | Intended use |
+|---|---|
+| Python 3.10+ | Core programming language |
+| Flask | Web application |
+| SQLite | Local data storage |
+| HTML, CSS, JavaScript | User interface |
+| pytest | Automated testing |
+
+## 🧱 Proposed Data Model
+
+Each pantry item is expected to include:
+- Item name and category
+- Quantity and measurement unit
+- Optional purchase and expiry dates
+- Low-stock threshold
+
+Consumption records should capture the item, quantity used, and timestamp so inventory changes can be tracked.
+
+## 🗺️ Roadmap
+
+- [ ] Set up Flask application and SQLite schema
+- [ ] Implement pantry item management
+- [ ] Add expiry-date and low-stock views
+- [ ] Build consumption history
+- [ ] Generate and edit shopping lists
+- [ ] Add tests, sample data, and screenshots
+
+## 📁 Intended Project Structure
+
 ```text
 .
 ├── app.py
@@ -34,19 +73,13 @@ PantryLedger is a household inventory management project for tracking pantry ite
 └── README.md
 ```
 
-## Development status
-**Planning / README scaffold.** This repository currently contains the project overview only. The application, database, tests, and user interface are not implemented yet. The feature list is the intended scope.
+## 👨‍💻 Author
 
-## Data model proposal
-Each pantry item should have a name, category, quantity, unit, optional expiry date, and low-stock threshold. Consumption entries should record the item, quantity used, and timestamp so that stock changes remain understandable.
+**Kalash Srivastava**  
+[GitHub](https://github.com/kalashsri18-crypto) · [LinkedIn](https://www.linkedin.com/in/kalash-srivastava-b6592a3b3) · [Email](mailto:kalashsri18@gmail.com)
 
-## Roadmap
-- [ ] Build the Flask app and SQLite schema
-- [ ] Implement pantry item CRUD
-- [ ] Add expiry and low-stock views
-- [ ] Add consumption history
-- [ ] Generate and edit shopping lists
-- [ ] Add tests, sample data, and screenshots
+---
 
-## License
-See [LICENSE](LICENSE) if a license file is added to this repository.
+<div align="center">
+  Documentation and project direction by Kalash
+</div>
