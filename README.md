@@ -56,7 +56,7 @@ Consumption records should capture the item, quantity used, and timestamp so inv
 - [ ] Implement pantry item management
 - [ ] Add expiry-date and low-stock views
 - [ ] Build consumption history
-- [ ] Generate and edit shopping lists
+- [x] Generate low-stock suggestions and manage shopping list
 - [ ] Add tests, sample data, and screenshots
 
 ## 📁 Intended Project Structure
